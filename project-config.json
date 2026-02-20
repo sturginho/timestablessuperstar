@@ -1,0 +1,13 @@
+{
+    "name": "ttss",
+    "description": "Times Tables Super Star",
+    "toolkit": "basic",
+    "sources": [
+        "src/main.bas"
+    ],
+    "build": "release",
+    "definitions": [],
+    "includes": [],
+    "args": [],
+    "compiler": ""
+}
