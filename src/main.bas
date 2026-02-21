@@ -6,6 +6,10 @@ Start:
 
     gosub Banner
 
+    print "{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}"
+    print "{darkgrey}              version 1.0" 
+    print "           Ben Sturgess 2026"
+    print "{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}"
     print "{lightgreen}1. times table lookup"
     print "{lightblue}2. times table test"
     print "{cyan}3. quiz (chosen table)"
