@@ -30,17 +30,18 @@ Quizchosenstart:
     print
     print "ok, let's quiz the ";n;" times table!"
     print
-
     s=0 : rem score
-
+    p=0
     for x=1 to q
     i=int(rnd(1)*12)+1 : rem random 1-12
+    qcwhile:
+        if i=p then i=int(rnd(1)*12)+1 : goto qcwhile
     print "{white}";i;" x ";n;" = ";
     input a
     if a=i*n then s=s+1 : print "{lightgreen}correct!" : goto qcnxt
     print "{red}oops! the right answer is ";i*n
-
     qcnxt:   
+        p=i
         print
         next x
 
@@ -48,6 +49,7 @@ Quizchosenstart:
     print "{lightgreen}well done! you scored ";s;" out of ";q
     if s=q then print "{yellow}***super star!***"
     print
+
 Qcmenu:
     print "{white}1. try another quiz"
     print "2. return to main menu"
