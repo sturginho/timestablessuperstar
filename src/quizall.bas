@@ -56,9 +56,17 @@ Quizallstart:
 
     s=0 : rem score
 
+    at=0 
+    tb=c*12
+    for i=1 to tb
+        u(i)=0
+    next i
+
     for x=1 to q
-    r=int(rnd(1)*c)+1 : n=t(r)
-    m=int(rnd(1)*12)+1
+    qawhile:
+        r=int(rnd(1)*c)+1 : n=t(r)
+        m=int(rnd(1)*12)+1
+        if at<tb then kd=(r-1)*12 + m : if u(kd)=1 then goto qawhile
 
     print "{white}";m;" x ";n;" = ";
     input a
@@ -66,10 +74,11 @@ Quizallstart:
     if a=m*n then s=s+1 : print "{lightgreen}correct!" : goto qanxt
     print "{red}oops! the right answer is ";m*n
     qanxt:
+        if at<tb then u(kd)=1 : at=at+1
         print
         next x
-
-    if s<6 then print "{red}you scored ";s;" out of 12 {return}not bad, but you can do better!": goto Qamenu
+     
+    if s<(q/2) then print "{red}you scored ";s;" out of ";q" {return}not bad, but you can do better!": goto Qamenu
     print "{lightgreen}well done! you scored ";s;" out of ";q
     if s=q then print "{yellow}***super star!***"
     print

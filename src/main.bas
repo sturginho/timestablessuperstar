@@ -1,4 +1,5 @@
-DIMT(11)
+dim t(11)
+dim u(132)
 
 Start:
     print chr$(147) : rem clear screen
