@@ -8,7 +8,7 @@ Start:
     gosub Banner
 
     print "{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}{down}"
-    print "{darkgrey}              version 1.0" 
+    print "{darkgrey}              version 1.1" 
     print "           Ben Sturgess 2026"
     print "{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}{up}"
     print "{lightgreen}1. times table lookup"
